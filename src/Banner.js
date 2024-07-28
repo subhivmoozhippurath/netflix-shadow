@@ -32,13 +32,13 @@ function Banner() {
         backgroundPosition :"center center",
     }}>
         <div className="bannerDetails">
-            <h1 className="bannerheading">movie name</h1>
+            <h1 className="bannerheading">{movie.original_title}</h1>
             <div className="bannerbuttonGroup">
                 <button className="bannerbuttons">play</button>
                 <button className="bannerbuttons">like</button>
             </div>
             <p className="bannerdescription">
-                {truncuate(`cfucfd cwfcuygewrfger  dfgr drtn r5t rfhju65 rftt65huj65u4jh56hju56 t6juerfygefgter efewgf8retyfer wvfuewihgvfervf ervguergfvy7erugver vfierugfveryu7gd8`,150)}
+                {truncuate(`${movie.overview}`,150)}
             </p>
         </div>
         <div className="bannerBottom"></div>
